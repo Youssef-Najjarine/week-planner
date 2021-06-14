@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 575px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-full,
+.column-half {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .column-half {
+    width: 50%;
+  }
+}
+
+.hardCoded {
+  text-align: center;
+}
+
+/* <---------start of modal-------> */
+
+.addEntry {
+  color: white;
+  font-size: 20px;
+  padding: 10px 70px;
+  border-radius: 5px;
+  background-color: gray;
+  margin-top: 100px;
+  box-shadow: 10px 5px 5px black;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.blackBox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackBox.active {
+  display: flex;
+}
+
+.whiteBox {
+  background-color: white;
+  padding: 20px 100px 60px 100px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.whiteBoxAddEntry {
+  font-size: 50px;
+}
+
+.whiteBox .submit {
+  color: white;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: gray;
+  margin: 0 0 0 550px;
+  box-shadow: 10px 5px 5px black;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.dayAndTime {
+  display: flex;
+}
+
+#days,
+#time {
+  margin: 20px 20px 20px 0;
+  width: 120px;
+  height: 30px;
+}
+
+#description {
+  border-color: black;
+  border-radius: 5px;
+  width: 700px;
+  height: 150px;
+  box-shadow: 1px 1px 1px black;
+}
+
+textarea::placeholder {
+  font-size: 20px;
+}
+
+/* <---------End of Modal css-------> */

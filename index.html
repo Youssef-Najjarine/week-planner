@@ -4,9 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="grey">
+  <div class="container">
+    <div class="hardCoded">
+    <h1>Weekly Planner</h1>
+    <button class="addEntry">Add Entry</button>
+    </div>
+  </div>
+
+    <div class="blackBox">
+      <div class="whiteBox">
+
+
+          <h2 class="whiteBoxAddEntry">Add Entry</h2>
+        <div class="dayAndTime">
+        <select name="days" id="days">
+          <option value="DayOfWeek">Day of Week</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+
+
+            <select name="time" id="time">
+              <option value="Time">Time</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+        </div>
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <div>
+        <button class="submit">Submit</button>
+        </div>
+      </div>
+    </div>
   <script src="main.js"></script>
 </body>
 </html>
