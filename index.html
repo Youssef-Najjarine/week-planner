@@ -4,22 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="grey">
+<body>
   <div class="container">
     <div class="hardCoded">
     <h1>Weekly Planner</h1>
+
+    <div class="daysOfWeek">
+      <button class="sunday">Sunday</button>
+      <button class="monday">Monday</button>
+      <button class="tuesday">Tuesday</button>
+      <button class="wednesday">Wednesday</button>
+      <button class="thursday">Thursday</button>
+      <button class="friday">Friday</button>
+      <button class="saturday">Saturday</button>
+    </div>
+    <div>
     <button class="addEntry">Add Entry</button>
     </div>
-  </div>
+    <div class="mondayTaskList">
+    <table>
+      <h2>Scheduled Events for Monday</h2>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
 
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+
+<form>
     <div class="blackBox">
       <div class="whiteBox">
-
-
           <h2 class="whiteBoxAddEntry">Add Entry</h2>
         <div class="dayAndTime">
         <select name="days" id="days">
@@ -58,6 +85,7 @@
         </div>
       </div>
     </div>
+  </form>
   <script src="main.js"></script>
 </body>
 </html>

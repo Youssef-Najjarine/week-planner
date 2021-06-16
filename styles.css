@@ -7,6 +7,10 @@ body {
   font-family: 'Baloo Tammudu 2', cursive;
 }
 
+h2 {
+  text-align: center;
+}
+
 .hidden {
   display: none !important;
 }
@@ -41,20 +45,26 @@ body {
   text-align: center;
 }
 
+.daysOfWeek button {
+  margin: 0 5px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
 /* <---------start of modal-------> */
 
 .addEntry {
-  color: white;
+  color: black;
   font-size: 20px;
   padding: 10px 70px;
   border-radius: 5px;
-  background-color: gray;
+  background-color: white;
   margin-top: 100px;
   box-shadow: 10px 5px 5px black;
-  border: 0;
-  outline: none;
+  border-color: black;
   cursor: pointer;
-  transition: all 0.5s;
 }
 
 .blackBox {
@@ -121,3 +131,18 @@ textarea::placeholder {
 }
 
 /* <---------End of Modal css-------> */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(odd) {
+  background: #eee;
+}
