@@ -204,11 +204,32 @@ function saveData() {
 function createEntries(entry) {
   const tr = document.createElement('tr');
   const td1 = document.createElement('td');
-  td1.textContent = entry.time;
-  tr.appendChild(td1);
   const td2 = document.createElement('td');
-  td2.textContent = entry.description;
+  const div1 = document.createElement('div');
+  const div2 = document.createElement('div');
+  const button1 = document.createElement('button');
+  const button2 = document.createElement('button');
+  tr.appendChild(td1);
+  td1.textContent = entry.time;
   tr.appendChild(td2);
+  td2.appendChild(div1);
+  div1.setAttribute('class', 'secondTd');
+  td2.textContent = entry.description;
+  div1.appendChild(div2);
+  div2.setAttribute('class', 'updateAndDelete');
+  div2.appendChild(button1);
+  button1.setAttribute('class', 'update');
+  div2.appendChild(button2);
+  button2.setAttribute('class', 'delete');
+
+  // const tr = document.createElement('tr');
+  // const td1 = document.createElement('td');
+  // td1.textContent = entry.time;
+  // tr.appendChild(td1);
+  // const td2 = document.createElement('td');
+  // td2.textContent = entry.description;
+  // tr.appendChild(td2);
+
   return tr;
 }
 
@@ -229,6 +250,7 @@ function handleTuesdayButton() {
 }
 
 function handleWednesdayButton() {
+
   tableBody.innerHTML = '';
   h2.textContent = 'Scheduled Events for Wednesday';
   for (let i = 0; i < data.wednesday.wednesdayEvents.length; i++) {
@@ -267,3 +289,5 @@ function handleSundayButton() {
     tableBody.appendChild(createEntries(data.sunday.sundayEvents[i]));
   }
 }
+
+createEntries();
