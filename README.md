@@ -2,4 +2,4 @@
 
 A dynamic HTML, CSS, and JavaScript week planner app.
 
-![weekly-planner-demo](<img src="weekly-planner-demo.gif"/>)
+![weekly-planner-demo](weekly-planner-demo.gif)
