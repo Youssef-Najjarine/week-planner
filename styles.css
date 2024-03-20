@@ -100,7 +100,6 @@ h2 {
   padding: 10px 30px;
   border-radius: 5px;
   background-color: gray;
-  margin: 0 0 0 550px;
   box-shadow: 10px 5px 5px black;
   border: 0;
   outline: none;
@@ -145,4 +144,42 @@ td {
 
 tbody tr:nth-child(odd) {
   background: #eee;
+}
+
+.secondTd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.updateAndDelete {
+  margin-right: 10px;
+}
+
+.update {
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: blue;
+  box-shadow: 5px 5px 5px black;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.delete {
+  color: white;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: red;
+  box-shadow: 5px 5px 5px black;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.secondTd p {
+  margin: 0;
 }
