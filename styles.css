@@ -179,3 +179,7 @@ tbody tr:nth-child(odd) {
   outline: none;
   cursor: pointer;
 }
+
+.secondTd p {
+  margin: 0;
+}
